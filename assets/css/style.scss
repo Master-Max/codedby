@@ -2,6 +2,7 @@
 ---
 @import "{{ site.theme }}";
 
-h1{
+body{
   color: red;
+  background-color: blue;
 }
