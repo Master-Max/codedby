@@ -3,20 +3,107 @@
   <head>
     <title>The Infinite Is Finite!</title>
   </head>
-  
+
   <body>
-    <h1>Welcome To ZOMBO COM!</h1>
-    <h2>this IS zombo com</h2>
-    <a href="http://www.zombo.com">Visit The Universe</a>
+    <div class = "intro">
+      <h1>Salutations, They Call Me <b>Max</b>.</h1>
+      <h1>If you can dream it, I can make it.</h1>
+
+      <div class="rocket">
+        <div class="rocket-body">
+          <div id="window"></div>
+          <div id="engine"></div>
+          <div id="body"></div>
+          <div id="l-fin"></div>
+          <div id="r-fin"></div>
+        </div>
+      </div>
+
+    </div>
   </body>
-  
+
   <style type='text/css'>
+
     body {
-      background-color:#CCCCCC;
+      background: #CCCCCC;
     }
-    
+
     h1 {
-      color:#0000EE;
+      color: grey;
     }
+
+    b {
+      color: red;
+    }
+
+    .intro {
+      padding-top: 40%;
+      text-align: center;
+    }
+
+    .rocket {
+      margin: auto;
+      width: 50%;
+      border: 3px solid green;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .rocket-body {
+      display: inline-block;
+    }
+
+    #window {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: red;
+      border-radius: 100%;
+      border: 5px solid grey;
+      top: calc(50% + 30px);
+      left: calc(50% - 25px);
+      z-index: 20;
+    }
+    #body {
+      width: 100px;
+      height: 200px;
+      background: #FFFFFF;
+      border-radius: 50% 50% 50% 50% / 60% 60% 10% 10%;
+      z-index: 0;
+    }
+    #engine {
+      position: absolute;
+      border-bottom: 20px solid black;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      height: 0px;
+      width: 50px;
+      top: calc(50% + 180px);
+      left: calc(50% - 35px);
+      z-index: -1;
+    }
+    #l-fin {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 0px solid transparent;
+      border-bottom: 50px solid black;
+      top: calc(50% + 120px);
+      left: calc(50% - 70px);
+      z-index: 1;
+    }
+    #r-fin {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 0px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 50px solid black;
+      top: calc(50% + 120px);
+      left: calc(50% + 50px);
+      z-index: 1;
+    }
+
   </style>
 </html>
